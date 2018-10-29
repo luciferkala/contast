@@ -51,9 +51,9 @@ class SubjectScreen extends React.Component {
   return (
       <View style = {styles.container}>
         <Text style = {styles.title}>{subjectName}</Text>
-        <FlatList data = {TodoListData}
+        <FlatList style={styles.list} data = {TodoListData}
                   renderItem = {({item, index}) => {
-                    return(<TodoItem item={item} index = {index} >
+                    return(<TodoItem item={item} index={index} >
 
                     </TodoItem>
                     );
@@ -75,11 +75,15 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   title : {
+    color: "skyblue",
     fontSize : 25,
     fontWeight : "600",
-    marginLeft: 25,
-    marginTop: 15,
-    marginBottom: 40
+    paddingLeft: 25,
+    paddingTop: 15,
+    paddingBottom: 20
   },
+  list: {
+    width:"100%"
+  }
 
 });

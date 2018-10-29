@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView, View , TouchableWithoutFeedback} from 'react-native';
-import { Card, ListItem } from 'react-native-elements';
+import { Card } from 'react-native-elements';
 
 export default class HomeScreen extends React.Component {
     state = {

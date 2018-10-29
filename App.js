@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 import HomeScreen from './HomeScreen';
 import SubjectScreen from './SubjectScreen.js';
