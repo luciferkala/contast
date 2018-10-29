@@ -8,6 +8,9 @@ import LoginScreen from './LoginScreen.js';
 
 
 class App extends React.Component {
+  static navigationOptions = {
+    title: 'Home'
+  };
   render() {
     return (
         <AppStackNavigator style={styles.AppNav}/>
@@ -15,12 +18,26 @@ class App extends React.Component {
   }
 }
 
-const AppStackNavigator =  createStackNavigator({
-  Login: LoginScreen,
+const AppStackNavigator =  createStackNavigator(
+  {Login: LoginScreen,
   Home: HomeScreen,
   Subject : SubjectScreen,
-
-})
+  },
+  {
+    initialRouteName: 'Login',
+    /* The header config from HomeScreen is now here */
+    navigationOptions: {
+      headerStyle: {
+        backgroundColor: '#ffffff',
+        borderBottomColor: 'transparent'
+      },
+      headerTintColor: '#2798F7',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
+  }
+)
 
 export default App;
 

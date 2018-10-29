@@ -17,6 +17,7 @@ class HomeScreen extends React.Component {
      }
      render() {
          let subject = this.state.names;
+         
         return (
            <View style={styles.container}>
               <ScrollView style={styles.subjectList}>
