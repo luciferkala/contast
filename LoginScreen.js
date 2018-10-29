@@ -18,11 +18,19 @@ class LoginScreen extends React.Component {
                 labelText="STUDENT ID"
                 labelTextSize={14}
                 labelColor="#2798F7"
+                textColor="#2798F7"
+                borderBottomColor='#2798F7'
+                inputType="Student Id"
+                customStyle={{marginBottom:30}}
             />
             <InputField
                 labelText="PASSWORD"
                 labelTextSize={14}
                 labelColor="#2798F7"
+                textColor="#2798F7"
+                borderBottomColor='#2798F7'
+                inputType="Password"
+                customStyle={{marginBottom:30}}
             />
           </ScrollView>
         </View>
