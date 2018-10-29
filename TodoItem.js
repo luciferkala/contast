@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class TodoItem extends React.Component {
+class TodoItem extends React.Component {
   render() {
     return (
         <View style={styles.toDo}>
@@ -12,6 +12,8 @@ export default class TodoItem extends React.Component {
     );
   }
 }
+
+export default TodoItem;
 
 const styles = StyleSheet.create({
         toDo:{

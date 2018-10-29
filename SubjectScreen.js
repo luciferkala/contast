@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   title : {
-    color: "skyblue",
+    color: "#2798F7",
     fontSize : 25,
     fontWeight : "600",
     paddingLeft: 25,
