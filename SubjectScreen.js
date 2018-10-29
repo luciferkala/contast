@@ -4,9 +4,48 @@ import { Card, ListItem} from 'react-native-elements';
 import HomeScreen from './HomeScreen.js';
 import { FlatList } from 'react-native-gesture-handler';
 
-const flatListData = {
-  
-}
+const flatListData =  [
+  { "schedule": "Assignment",
+    "date" : "10/30",
+    "description": "To make App",
+    "key" : 0
+  },
+  { "schedule": "Report",
+    "date" : "11/30",
+    "description": "To write Algorithm",
+    "key" : 1
+  },
+  { "schedule": "Presentaion",
+    "date" : "12/20",
+    "description": "To Presentation Shit",
+    "key" : 2
+  },
+  { "schedule": "Quiz",
+    "date" : "11/5",
+    "description": "To Evaluate Achievement",
+    "key" : 3
+  },
+  { "schedule": "Report",
+    "date" : "11/27",
+    "description": "To make Shit",
+    "key" : 4
+  },
+  { "schedule": "Presentation",
+    "date" : "11/ 18",
+    "description": "What is LOL?",
+    "key" : 5
+  },
+  { "schedule": "Test",
+    "date" : "12/25",
+    "description": "To Evaluate what you have girlfriend",
+    "key" : 6
+  },
+  { "schedule": "Assignment",
+    "date" : "12/7",
+    "description": "To play Battleground",
+    "key" : 7
+  } 
+]
 
 class SubjectScreen extends React.Component {
   render() {
@@ -14,7 +53,11 @@ class SubjectScreen extends React.Component {
   return (
       <View style = {styles.container}>
         <Text style = {styles.title}>{subjectName}</Text>
-        <FlatList>
+        <FlatList data = {flatListData}
+                  renderItem = {(item, index) => {
+                    console.log(`Item = ${JSON.stringify(item)}, Index= ${index}`)
+                  }}
+        >
           
         </FlatList>
       </View>
