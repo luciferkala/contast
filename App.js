@@ -8,7 +8,7 @@ import SubjectScreen from './SubjectScreen.js';
 export default class App extends React.Component {
   render() {
     return (
-        <AppStackNavigator style = {styles.AppNav}/>
+        <AppStackNavigator/>
     );
   }
 }
@@ -19,8 +19,3 @@ const AppStackNavigator =  createStackNavigator({
 
 })
 
-const styles = StyleSheet.create({
-  AppNav: {
-    backgroundColor : "#ffffff"
-  }
-});

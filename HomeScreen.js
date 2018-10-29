@@ -1,10 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, ScrollView, View , TouchableWithoutFeedback} from 'react-native';
 import { Card, ListItem } from 'react-native-elements';
-import { createStackNavigator } from 'react-navigation';
-import { MaterialIcons } from "@expo/vector-icons";
-import SubjectScreen from './SubjectScreen.js';
-
 
 export default class HomeScreen extends React.Component {
     state = {
@@ -22,7 +18,7 @@ export default class HomeScreen extends React.Component {
      render() {
          let subject = this.state.names;
         return (
-           <View>
+           <View style={styles.container}>
               <ScrollView style={styles.subjectList}>
                  {  
                     this.state.names.map((item, index) => (
@@ -41,8 +37,8 @@ export default class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    testButton:{
-        marginTop: 100
+    container:{
+        backgroundColor:"#ffffff"
     },
     subjectList: {
     },
