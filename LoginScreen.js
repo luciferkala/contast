@@ -5,7 +5,7 @@ import HomeScreen from './HomeScreen'
 export default class LoginScreen extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         <Text>This is LoginScreen</Text>
       </View>
     );
@@ -13,5 +13,7 @@ export default class LoginScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-
+  container:{
+    backgroundColor: "#ffffff"
+  }
 });
